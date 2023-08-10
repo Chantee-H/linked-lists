@@ -100,6 +100,17 @@ class LinkedList{
         }
         return "Not found";
     }
+
+    toString(){
+        let current = this.head;
+        let str = "";
+        while(current){
+            str += current.data + " => " ;
+            current = current.next;
+        }
+        str += "null";
+        return str;
+    }
 }
 
 class Node{
