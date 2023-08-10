@@ -54,6 +54,19 @@ class LinkedList{
        }
        return lastNode;
     }
+
+    nodeIndex(value){
+        let index = 0;
+        let node = this.head;
+        while(node){
+            if(index === value){
+                return node;
+            }
+            node = node.next;
+            index ++;
+        }
+        return -1;
+    }
 }
 
 class Node{
