@@ -87,6 +87,19 @@ class LinkedList{
         }
           return false;
     }
+
+    find(value){
+        let current = this.head;
+        let index = 0;
+        while(current !== null){
+          if(current.data === value){
+              return `Found at index ${index}`;
+          }
+          current = current.next;
+          index ++;
+        }
+        return "Not found";
+    }
 }
 
 class Node{
