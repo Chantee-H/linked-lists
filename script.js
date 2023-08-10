@@ -40,6 +40,20 @@ class LinkedList{
         }
         return count;
      }
+
+     getFirst(){
+        return this.head;
+    }
+    
+    getLast(){
+       let lastNode = this.head;
+       if(lastNode){
+        while(lastNode.next){
+            lastNode = lastNode.next
+        }
+       }
+       return lastNode;
+    }
 }
 
 class Node{
