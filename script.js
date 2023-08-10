@@ -119,3 +119,22 @@ class Node{
         this.next = null;
     }
 }
+
+const list = new LinkedList();
+
+list.prepend(1);
+list.append(2);
+list.append(3);
+list.append(4);
+list.append(5);
+list.append(6);
+list.pop();
+
+console.log(list.size()); // returns 5 since list.pop() removed 6
+console.log(list.getFirst()); // returns 1
+console.log(list.getLast()); // returns 5
+console.log(list.nodeIndex(0)); // returns 1
+console.log(list.toString()); // returns 1 => 2 => 3 => 4 => 5 => null
+console.log(list.contains(3)); // returns true
+console.log(list.contains(6)); // returns false
+console.log(list.find(2)); // returns Found at index 1
