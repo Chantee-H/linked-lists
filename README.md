@@ -13,4 +13,4 @@ The following features are implemented:
 - pop() removes the last element from the list
 - contains(value) returns true if the passed in value is in the list and otherwise returns false.
 - find(value) returns the index of the node containing value, or null if not found.
-- toString represents your LinkedList objects as strings, The format should be: ( value ) -> ( value ) -> ( value ) -> null
+- toString() represents your LinkedList objects as strings, The format should be: ( value ) -> ( value ) -> ( value ) -> null
